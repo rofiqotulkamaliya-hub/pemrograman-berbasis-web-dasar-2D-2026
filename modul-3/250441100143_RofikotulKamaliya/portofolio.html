@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-200 text-black">
+    <nav class="fixed w-full top-0 bg-white text-blue-500 p-4 flex justify-between items-center shadow z-50">
+        <h1 class="text-xl font-bold">My Portofolio</h1>
+        <div class="flex items-center gap-6 text-sm font-semibold">
+            <a href="#home" class="hover:text-blue-700">Home</a>
+            <a href="#about" class="hover:text-blue-700">About</a>
+            <a href="#skill" class="hover:text-blue-700">Skills</a>
+            <a href="#experience" class="hover:text-blue-700">Experience</a>
+            <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+    <section id="home" class="h-screen flex items-center px-10">
+        <div class="grid md:grid-cols-2 w-full gap-10">
+            <div>
+                <p class="font-semibold mb-2">Hello i'm</p>
+                <h2 class="text-4xl font-bold mb-4">Rofikotul Kamaliya</h2>
+                <p class="mb-6">Seorang mahasiswa Sistem Informasi yang fokus mengembangkan kemampuan dalam Web
+                    Development dan desain tampilan website modern</p>
+                <a href="#about" class="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition inline-block">
+                    Tentang Saya
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <img src="gambar/foto diri.png" class="w-30 md:w-50 rounded-2xl shadow-lg object-cover">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="h-screen flex items-center px-10 bg-blue-200">
+        <div class="grid md:grid-cols-2 gap-10 items-center w-full">
+            <div class="flex justify-center">
+                <img src="gambar/foto.png" class="w-60 md:w-80 rounded-2xl shadow-lg">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="mb-4">
+                    Nama saya Rofikotul Kamaliya. Mahasiswa program studi Sistem Informasi yang memiliki ketertarikan
+                    dalam bidang web development dan desain antarmuka. Saya memiliki kemampuan dasar dalam membangun
+                    website menggunakan HTML, CSS, dan Tailwind CSS, serta terus belajar untuk mengembangkan skill di
+                    bidang teknologi. Aktif dalam organisasi, saya juga terbiasa bekerja dalam tim, berkomunikasi,
+                    dan bertanggung jawab dalam setiap kegiatan yang dijalankan.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skill" class="h-screen flex flex-col justify-center px-10 bg-blue-200">
+        <h2 class="text-3xl font-bold text-center mb-8">My Skills</h2>
+        <div class="flex flex-col gap-6 max-w-2xl mx-auto">
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-b-4 text-center">
+                <h3 class="font-bold mb-2">Microsoft word</h3>
+                <p class="text-sm">Membuat dan mengatur dokumen</p>
+            </div>
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-b-4 text-center">
+                <h3 class="font-bold mb-2">Canva</h3>
+                <p class="text-sm">Membuat desain sederhana</p>
+            </div>
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-b-4 text-center">
+                <h3 class="font-bold mb-2">Microsoft Excel</h3>
+                <p class="text-sm">Mengolah data sederhana dan menggunakan rumus dasar seperti SUM dan AVERAGE</p>
+            </div>
+    </section>
+    <section id="experience" class="h-screen flex flex-col justify-center px-10 bg-blue-200">
+        <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                <h3 class="font-bold text-lg">Panitia Dies Natalis UKMFT-ITC</h3>
+                <p class="text-sm mb-2">Anggota Sie Publikasi, Dokumentasi, dan Desain (PDD)</p>
+                <ul class="list-disc ml-5 text-sm space-y-1">
+                    <li>Bertanggung jawab dalam pembuatan konten publikasi kegiatan.</li>
+                    <li>Melakukan dokumentasi selama acara berlangsung.</li>
+                </ul>
+            </div>
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                <h3 class="font-bold text-lg">Panitia MAKASI (Mahasiswa Akrab Sistem Informasi)</h3>
+                <p class="text-sm mb-2">Anggota Sie Acara</p>
+                <ul class="list-disc ml-5 text-sm space-y-1">
+                    <li>Terlibat dalam perencanaan kegiatan acara.</li>
+                    <li>Berkoordinasi dengan tim dalam pelaksanaan acara.</li>
+                </ul>
+            </div>
+            <div class="bg-white text-blue-500 p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                <h3 class="font-bold text-lg">Panitia Makrab Pengurus UKMFT-ITC</h3>
+                <p class="text-sm mb-2">Bendahara Pelaksana (Benpel)</p>
+                <ul class="list-disc ml-5 text-sm space-y-1">
+                    <li>Mengelola keuangan kegiatan.</li>
+                    <li>Memastikan penggunaan dana sesuai kebutuhan acara.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="h-screen flex flex-col justify-center items-center bg-blue-200 px-6">
+        <h2 class="text-3xl font-bold mb-2">Contact Me</h2>
+        <div class="flex justify-center items-center gap-2 mb-2">
+          <a href="https://wa.me/6287851652723" target="_blank"
+            class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+            <img src="gambar/wa.png" class="w-6 h-6 object-contain" />
+          </a>
+          <a
+            href="https://www.instagram.com/rofikmlya?igsh=MTJzZGdnZXZqamd1Zw==" target="_blank"
+            class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+            <img src="gambar/ig.png" class="w-6 h-6 object-contain" />
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rofikotulkamaliya@gmail.com" target="_blank"
+            class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+            <img src="gambar/email.png" class="w-6 h-6 object-contain" />
+          </a>
+        </div>
+        <form class="bg-white p-6 rounded-xl w-full max-w-md shadow-lg text-blue-500">
+            <input
+            type="text"
+            placeholder="Nama"
+            class="w-full mb-4 p-3 rounded border outline-none focus:ring-2 focus:ring-blue-500">
+            <input
+            type="email"
+            placeholder="Email"
+            class="w-full mb-4 p-3 rounded border outline-none focus:ring-2 focus:ring-blue-500">
+            <textarea
+            placeholder="Pesan"
+            rows="4"
+            class="w-full mb-4 p-3 rounded border outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+                Kirim Pesan
+            </button>
+        </form>
+    </section>
+    <footer class="bg-white text-blue-500 text-center p-4 font-semibold">
+        @2026 kmlya
+    </footer>
+</body>
+</html>
