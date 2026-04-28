@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        .dark-mode nav {
+            background-color: #101722 !important;
+            border-bottom: 1px solid gray;
+            box-shadow: 0 4px 20px rgba(95, 95, 95, 0.05);
+        }
+        .dark-mode section {
+            background-color: black !important;
+            color: white !important;
+        }
+        .dark-mode footer,
+        .dark-mode #about,
+        .dark-mode #contact {
+            background-color: #FFD47E !important;
+            color: black !important;
+        }
+        .dark-mode .bg-white {
+            background-color: black !important;
+            color: white !important;
+        }
+        .dark-mode .text-darkmode {
+            color: lightgray;
+        }
+        .dark-mode input,
+        .dark-mode textarea {
+            background-color: black !important;
+            color: white !important;
+            border: 1px solid gray !important;
+        }
+        .dark-mode button {
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-white dark:bg-[#101722] shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="flex items-center gap-2">
+                <img src="gambar/Logo.png" class="w-8 h-8">
+                <h1 class="text-xl font-bold text-[#8A38F5]">BzMe</h1>
+            </div>
+            <ul class="hidden md:flex gap-8 text-gray-600 dark:text-gray-300 font-medium">
+                <li><a href="#home" class="text-[#8A38F5] hover:text-[#FFD47E]">Home</a></li>
+                <li><a href="#about" class="text-[#8A38F5] hover:text-[#FFD47E]">About</a></li>
+                <li><a href="#services" class="text-[#8A38F5] hover:text-[#FFD47E]">Services</a></li>
+                <li><a href="#contact" class="text-[#8A38F5] hover:text-[#FFD47E]">Contact</a></li>
+                <li><a href="#blog" class="text-[#8A38F5] hover:text-[#FFD47E]">Blog</a></li>
+            </ul>
+            <div class="flex items-center gap-2">
+                <div id="tombol" class="w-16 h-8 bg-gray-200 rounded-full flex items-center px-1 cursor-pointer">
+                    <div id="toggle" class="w-6 h-6 bg-white rounded-full shadow flex items-center justify-center duration-300">
+                        <img id="icon" src="gambar/sun.png" class="w-4 h-4 rounded-full">
+                    </div>
+                </div>
+                <a href="formulir.html" class="bg-[#FF9335] text-sm text-white px-5 py-2 rounded-md font-semibold">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="pt-28 pb-16">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">We Create<br>
+                <span class="text-[#8A38F5]">Solution</span> For<br>Your Business</h1>
+                <p class="mt-5 font-semibold text-gray-500 dark:text-gray-500">
+                    We provide intelligent technology solutions to 
+                    optimize efficiency and accelerate the growth of your business operations.
+                </p>
+                <button class="mt-6 bg-[#FF9335] font-semibold text-white px-8 py-2 rounded-lg shadow">Get Started</button>
+            </div>
+            <div class="flex justify-center relative">
+                <img src="gambar/1.png" class="w-[400px] relative z-10">
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-16 bg-white dark:bg-black text-center">
+        <h2 class="text-2xl md:text-3xl font-bold">
+            We Provied The Best <span class="text-[#8A38F5]">Services</span>
+        </h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">
+            We deliver high-quality technology services specifically designed to enhance your business productivity and scalability in a sustainable way.
+        </p>
+        <div class="grid md:grid-cols-4 gap-8 mt-12 px-6 max-w-6xl mx-auto text-left">
+            <div class="p-6 rounded-2xl shadow-[0_0_10px_#8A38F5]">
+                <div class="bg-[#FFD47E] w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full">
+                    <img src="gambar/icon 1.png" class="w-12">
+                </div>
+                <h3 class="font-semibold text-lg">Seo/Sem</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mt-2">
+                    Lorem ipsum dolor sit amet consectur adipiscing elit. Dolor  sit amet consectur adipiscing elit quisque faucibus.
+                </p>
+                <button class="mt-4 bg-[#8A38F5] text-[#FFD47E] px-4 py-1 rounded hover:bg-[#6B2ED6] block mx-auto">
+                    Click Here
+                </button>
+            </div>
+            <div class="p-6 rounded-2xl shadow-[0_0_10px_#8A38F5]">
+                <div class="bg-[#FFD47E] w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full">
+                    <img src="gambar/icon 1.png" class="w-12">
+                </div>
+                <h3 class="font-semibold text-lg">Viral Campaign</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mt-2">
+                    Lorem ipsum dolor sit amet consectur adipiscing elit. Dolor  sit amet consectur adipiscing elit quisque faucibus.
+                </p>
+                <button class="mt-4 bg-[#8A38F5] text-[#FFD47E] px-4 py-1 rounded hover:bg-[#6B2ED6] block mx-auto">
+                    Click Here
+                </button>
+            </div>
+            <div class="p-6 rounded-2xl shadow-[0_0_10px_#8A38F5]">
+                <div class="bg-[#FFD47E] w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full">
+                    <img src="gambar/icon 2.png" class="w-12">
+                </div>
+                <h3 class="font-semibold text-lg">Marketing</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mt-2">
+                    Lorem ipsum dolor sit amet consectur adipiscing elit. Dolor  sit amet consectur adipiscing elit quisque faucibus.
+                </p>
+                <button class="mt-4 bg-[#8A38F5] text-[#FFD47E] px-4 py-1 rounded hover:bg-[#6B2ED6] block mx-auto">
+                    Click Here
+                </button>
+            </div>
+            <div class="p-6 rounded-2xl shadow-[0_0_10px_#8A38F5]">
+                <div class="bg-[#FFD47E] w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full">
+                    <img src="gambar/icon 3.png" class="w-8">
+                </div>
+                <h3 class="font-semibold text-lg">Others</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mt-2">
+                    Lorem ipsum dolor sit amet consectur adipiscing elit. Dolor  sit amet consectur adipiscing elit quisque faucibus.
+                </p>
+                <button class="mt-4 bg-[#8A38F5] text-[#FFD47E] px-4 py-1 rounded hover:bg-[#6B2ED6] block mx-auto">
+                    Click Here
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-[#FFD47E] py-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
+            <div class="flex justify-center">
+                <img src="gambar/2.png" class="w-[300px]">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold">
+                    Simple <span class="text-[#8A38F5]">Solutions!</span>
+                </h2>
+                <p class="mt-4">
+                    We understand that no two are alike. That’s why we take the time to truly understand your unique goals, challenges, and vision.
+                </p>
+                <div class="mt-6 flex gap-4">
+                    <button class="bg-[#FF9335] text-white px-6 py-2 rounded-lg">
+                        Get Started
+                    </button>
+                    <button class="border border-[#8A38F5] border-2 text-[#8A38F5] px-6 py-2 rounded-lg">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="py-35 bg-white dark:bg-black">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
+            <div>
+                <h2 class="text-3xl font-bold">
+                    Our <span class="text-[#8A38F5]">Agency</span>
+                </h2>
+                <p class="mt-4 dark:text-gray-300">
+                    We believe in the power of data. Our analytics-driven approach allows us to make informed
+                    Let's turn your data into actionable insights adored Solutions for Your Business
+                </p>
+                <button class="mt-6 bg-[#FF9335] text-white px-6 py-2 rounded-lg">
+                    Read Mode
+                </button>
+            </div>
+            <div class="flex justify-center">
+                <img src="gambar/3.png" class="w-[320px]">
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white text-center">
+        <h2 class="text-3xl font-bold">
+            What <span class="text-[#FF9335]">Clients</span> Say!
+        </h2>
+        <p class="text-gray-500 mt-2">
+            See How Our Digital Marketing Agency Helped Clients Achieve Their Goals
+        </p>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mt-12 px-6">
+            <div class="bg-white p-6 rounded-2xl text-left shadow-[0_0_20px_rgba(0,0,0,0.2)] hover:scale-105">
+                <h3 class="font-bold text-[#FF9335] text-lg">Johnny Suh</h3>
+                <p class="text-sm font-semibold text-gray-500">Executive CEO</p>
+                <p class="mt-3 text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut.
+                </p>
+                <div class="flex mt-3">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 1.png" class="w-4">
+                    <img src="gambar/Star 1.png" class="w-4">
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] text-left hover:scale-105">
+                <h3 class="font-bold text-[#FF9335] text-lg">Nashley Juan</h3>
+                <p class="text-sm font-semibold text-gray-500">Executive CEO</p>
+                <p class="mt-3 text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut.
+                </p>
+                <div class="flex mt-3">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 1.png" class="w-4">
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] text-left hover:scale-105">
+                <h3 class="font-bold text-[#FF9335] text-lg">Mark Z.</h3>
+                <p class="text-sm font-semibold text-gray-500">Executive CEO</p>
+                <p class="mt-3 text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut.
+                </p>
+                <div class="flex mt-3">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                    <img src="gambar/Star 2.png" class="w-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-[#FFD47E] pt-20 pb-9 relative">
+        <div class="max-w-6xl mx-auto px-6 absolute left-1/2 -translate-x-1/2 -top-10 w-full">
+            <div class="bg-[#FF9335] rounded-2xl px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-6 shadow-lg">
+                <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Ready To Get Started?
+                </h2>
+                <button class="border-2 border-white text-white px-6 py-2 rounded-xl">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-10 grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <img src="gambar/Logo.png" class="w-12">
+                    <h2 class="font-bold text-lg text-[#8A38F5]">BzMe</h2>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Company</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                    <li>Team</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Design</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Find a Designer</li>
+                    <li>Discover Inspiration</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Support</h3>
+                <ul class="space-y-1 text-sm">
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        const tombol = document.getElementById("tombol");
+        const circle = document.getElementById("toggle");
+        const icon = document.getElementById("icon");
+
+        function updateToggle() {
+            if (document.body.classList.contains("dark-mode")) {
+                circle.style.transform="translateX(32px)";
+                icon.src="gambar/moon.png";
+            } else {
+                circle.style.transform="translateX(0px)";
+                icon.src="gambar/sun.png";
+            }
+        }
+        tombol.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+            updateToggle();
+        });
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+        updateToggle();
+    </script>
+</body>
+</html>
